@@ -1,0 +1,20 @@
+{
+  "name": "checkout-receipt-image-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/checkout_asset_server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/payment_asset_decision.test.ts",
+    "example": "tsx scripts/submit_payment_event.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
