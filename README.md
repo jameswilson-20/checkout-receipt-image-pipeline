@@ -69,3 +69,7 @@ Quick start is above. For a real deployment you'll also need: The details below 
 **Checkout Receipt Image Pipeline: Storage**
 - **Checkout Receipt Image Pipeline:** Create the bucket with the correct ACL/region up front (`POST /v1/storage/bucket/create`); set CORS for browser uploads (`POST /v1/storage/bucket/set_cors`).
 - **Checkout Receipt Image Pipeline:** Presigned URLs expire, so use the shortest lifetime that still works. Persistent objects bill by GB·month; set a TTL or lifecycle policy so unused blobs get cleaned up.
+
+## Further reading
+
+- [Python API Approach: Prepare Print-Ready Images with 3 Ingest Controls](docs/python-api-approach-prepare-print-ready-images-wi-12at31.md)
